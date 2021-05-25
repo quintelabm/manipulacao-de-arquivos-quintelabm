@@ -232,7 +232,7 @@ int main()
 
     fstream arq("arqTexto.txt");
     cout << "Tamanho do arquivo texto: " << tamanhoArquivo(arq) << endl;
-    // arq.close();
+    arq.close();
 
     // EXEMPLO 2: Leitura de um arquivo texto utilizando getline
     // A cada linha, imprimimos o índice da linha e o valor de EOF.
