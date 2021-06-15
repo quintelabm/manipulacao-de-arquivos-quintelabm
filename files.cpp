@@ -219,7 +219,8 @@ void carregaRegistro(int indice)
         cout << x << endl;
         high_resolution_clock::time_point fim = high_resolution_clock::now();
         cout << duration_cast<duration<double> >(fim - inicio).count() << " segundos" << endl;
-    }    
+    }  
+
     arq.close();
 }
 
@@ -228,6 +229,7 @@ int main()
     // EXEMPLO 1: Criação de um arquivo texto
     // Não há distinção entre o inteiro e o float, são todos transformados em caracteres
     escreveArquivoTexto();
+
 
     fstream arq("arqTexto.txt");
 
