@@ -220,7 +220,6 @@ void carregaRegistro(int indice)
         high_resolution_clock::time_point fim = high_resolution_clock::now();
         cout << duration_cast<duration<double> >(fim - inicio).count() << " segundos" << endl;
     }    
-
     arq.close();
 }
 
@@ -231,6 +230,7 @@ int main()
     escreveArquivoTexto();
 
     fstream arq("arqTexto.txt");
+
     cout << "Tamanho do arquivo texto: " << tamanhoArquivo(arq) << endl;
     arq.close();
 
